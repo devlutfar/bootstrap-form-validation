@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font links -->
+    <!-- CSS links -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <title>BT5</title>
+  </head>
+  <body>
+    <!-- form control start-->
+
+    <div class="container">
+      <h1>Form control</h1>
+      <form>
+        <div class="mb-3">
+          <label for="email1" class="form-label">Email address</label>
+          <input type="email" class="form-control email1" id="email1" name="email1" />
+        </div>
+
+        <div class="mb-3">
+          <label for="Password1" class="form-label">Password</label>
+          <input type="password" class="form-control Password1" id="Password1" name="Password1" />
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input check1" id="check1" />
+          <label class="form-check-label" for="check1">Check me out</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="submit" value="Submit" class="btn btn-danger" />
+      </form>
+    </div>
+    <!-- form control end-->
+    <!-- file input start -->
+    <div class="container">
+      <div class="mb-3">
+        <h1>File input</h1>
+        <label for="formFilelg" class="form-label">Large file input</label>
+        <input class="form-control form-control-lg" id="formFilelg" type="file" />
+      </div>
+    </div>
+    <!-- file input end -->
+    <!-- Datalists start -->
+    <div class="container">
+      <h1>Datalist Option</h1>
+      <label for="DataList" class="form-label">Datalist</label>
+      <input class="form-control" list="datalistOptions" id="DataList" placeholder="Type to search..." />
+      <datalist id="datalistOptions">
+        <option value="Full Stack Web Design"></option>
+        <option value="Web Development"></option>
+        <option value="Wordpress"></option>
+        <option value="Shopify"></option>
+        <option value="Mearn Stack Development"></option>
+      </datalist>
+    </div>
+    <!-- Datalists end -->
+    <!-- select start -->
+    <div class="container">
+      <h1>Select</h1>
+      <select class="form-select" aria-label="select">
+        <option selected>Open this select menu</option>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">Bootstrap</option>
+        <option value="3">Javascript</option>
+        <option value="3">Node Js</option>
+      </select>
+    </div>
+    <!-- select end -->
+    <!-- multiple select start -->
+    <div class="container">
+      <h1>Multiple Select</h1>
+      <select class="form-select" multiple aria-label="multiple select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+      </select>
+    </div>
+    <!-- multiple select end -->
+    <!-- Checks box start -->
+    <div class="container">
+      <h1>Check box</h1>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+        <label class="form-check-label" for="flexCheckDefault"> First checkbox </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+        <label class="form-check-label" for="flexCheckChecked"> Second checkbox </label>
+      </div>
+    </div>
+    <!-- Checks box end -->
+
+    <!-- Radios start -->
+    <div class="container">
+      <h1>Radios</h1>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+        <label class="form-check-label" for="flexRadioDefault1"> radio </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+        <label class="form-check-label" for="flexRadioDefault2"> checked radio </label>
+      </div>
+    </div>
+    <!-- Radios end -->
+
+    <!-- Switches start -->
+    <div class="container">
+      <h1>Switches</h1>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+        <label class="form-check-label" for="flexSwitchCheckDefault">switch checkbox input</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+        <label class="form-check-label" for="flexSwitchCheckChecked">switch checkbox input</label>
+      </div>
+    </div>
+    <!-- Switches end -->
+    <!-- Buttons with dropdowns start -->
+    <div class="container">
+      <h1>Buttons with dropdowns</h1>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" aria-label="Text input with dropdown button" />
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">About</a></li>
+          <li><a class="dropdown-item" href="#">Homepage</a></li>
+          <li><a class="dropdown-item" href="#">Service</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Buttons with dropdowns end -->
+    <!-- Floating labels start -->
+    <div class="container">
+      <h1>Floating labels</h1>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+        <label for="floatingInput">Enter Your Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+        <label for="floatingPassword">Enter Your Password</label>
+      </div>
+    </div>
+    <!-- Floating labels end -->
+
+    <!-- form validation start -->
+    <div class="container">
+      <h1 class="f_validation">Form Validation</h1>
+      <form class="row g-3 needs-validation" novalidate>
+        <!-- first name -->
+        <div class="col-md-6">
+          <label for="f_name" class="form-label">First name</label>
+          <input type="text" class="form-control f_name" id="f_name" name="f_name" placeholder="Enter Your First Name" required />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Enter Your First Name.</div>
+        </div>
+        <!-- last name -->
+        <div class="col-md-6">
+          <label for="l_name" class="form-label">Last name</label>
+          <input type="text" class="form-control l_name" id="l_name" name="l_name" placeholder="Enter Your Last Name" required />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Enter Your Last Name.</div>
+        </div>
+
+        <!-- email address -->
+        <div class="col-md-12">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="text" class="form-control email" id="email" name="email" placeholder="Enter Your Your Email Address" required />
+          <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">Enter Your Email Address.</div>
+        </div>
+
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+            <label class="form-check-label" for="invalidCheck"> Agree to terms and conditions </label>
+            <div class="invalid-feedback">You must agree before submitting.</div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
+    <!-- form validation end -->
+
+    <!-- JS links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
